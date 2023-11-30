@@ -1,8 +1,8 @@
-# React + Vite
+# Assignment 12 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Assignment about survey ...there are different types of survey in this assignment have 6 category's survey
 
-Currently, two official plugins are available:
+This is the assignment live link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [assignment-12-cilent-site](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [assignment-12-server-site](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

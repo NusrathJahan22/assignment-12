@@ -1,3 +1,6 @@
+import Cart from "../Component/Cart";
+import FaqQuestion from "../Component/FaqQuestion";
+import Footer from "../Component/Footer";
 import Section3 from "../Component/Section3";
 import Testimonial from "../Component/Testimonial";
 
@@ -16,8 +19,12 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Cart></Cart>
+            <FaqQuestion></FaqQuestion>
             <Section3></Section3>
             <Testimonial></Testimonial>
+            <Footer></Footer>
+           
         </div>
     );
 };

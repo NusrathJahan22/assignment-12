@@ -14,6 +14,7 @@ import Userhome from "../Component/Dashboard/Userhome";
 import Payment from "../Component/Dashboard/Payment/Payment";
 import PaymentHistory from "../Component/Dashboard/Payment/PaymentHistory";
 import AllUsers from "../Component/Dashboard/AllUsers";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -23,19 +24,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('http://localhost:5000/cart1')
+        
       },
       {
         path: "/survey",
-        element: <Survey></Survey>
+        element: <PrivateRoute><Survey></Survey></PrivateRoute>,
+        loader: () => fetch('http://localhost:5000/cart1')
       },
       {
         path: "/surveyDetials",
-        element: <ServeyDetails></ServeyDetails>
+        element: <PrivateRoute><ServeyDetails></ServeyDetails></PrivateRoute>
       },
       {
         path: "/price",
-        element: <Price></Price>
+        element: <PrivateRoute><Price></Price></PrivateRoute>
       },
       {
         path: "/login",
@@ -57,8 +61,8 @@ const router = createBrowserRouter([
         element: <Cart></Cart>
       },
       {
-        path:"/dashboard",
-        element:<Userhome></Userhome>
+        path: "/dashboard",
+        element: <Userhome></Userhome>
       },
       {
         path: "/dashboard/survey",
@@ -66,15 +70,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/payment",
-        element:<Payment></Payment>
+        element: <Payment></Payment>
       },
       {
         path: "/dashboard/history",
-        element:<PaymentHistory></PaymentHistory>
+        element: <PaymentHistory></PaymentHistory>
       },
       {
         path: "/dashboard/users",
-        element:<AllUsers></AllUsers>
+        element: <AllUsers></AllUsers>
       },
     ]
   }

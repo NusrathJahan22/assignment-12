@@ -20,7 +20,7 @@ const Userhome = () => {
         <div>
              <div className="flex justify-evenly">
                 <h2 className="text-4xl">Items :</h2>
-                <h2 className="text-4xl">Total Price :{users.length}</h2>
+                <h2 className="text-4xl">Total Price :</h2>
                 <Link to="/dashboard/payment"><button className="btn bg-orange-500">Pay</button></Link>
                 
             </div>
@@ -37,6 +37,7 @@ const Userhome = () => {
       </tr>
     </thead>
     <tbody>
+     
       {/* row 1 */}
       <tr className="">
         <th>1</th>
