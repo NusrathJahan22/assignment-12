@@ -23,7 +23,7 @@ const AddSurvey = () => {
     //     const survey = {date, email, title, Category, description }
     //     console.log(survey)
 
-    //     fetch("http://localhost:5000/survey", {
+    //     fetch("https://server-assignment-12-umber.vercel.app/survey", {
     //         method: "POST",
     //         headers: {
     //             "Content-Type": "application/json",
